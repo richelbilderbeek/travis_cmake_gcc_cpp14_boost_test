@@ -36,3 +36,4 @@ Makefile
 cmake_install.cmake
 travis_cmake_gcc_cpp14
 travis_cmake_gcc_cpp14_boost_test
+travis_cmake_gcc_cpp14_boost_test_test

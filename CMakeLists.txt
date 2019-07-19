@@ -16,3 +16,6 @@ set_property(TARGET travis_cmake_gcc_cpp14_boost_test_test PROPERTY CXX_STANDARD
 # Boost with Boost.Test
 find_package(Boost REQUIRED COMPONENTS unit_test_framework) 
 include_directories(${Boost_INCLUDE_DIRS}) 
+
+# Only test needs Boost.Test
+target_link_libraries(travis_cmake_gcc_cpp14_boost_test_test ${Boost_LIBRARIES})
